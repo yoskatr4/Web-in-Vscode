@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "opn": "^6.0.0"
+  },
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.searchOnGoogle"
+  ],
+  "devDependencies": {},
+  "name": "google-search",
+  "displayName": "Google Search",
+  "description": "Search on Google from VS Code",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-github-repo"
+  },
+  "icon": "icon.png",
+  "main": "./extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.searchOnGoogle",
+        "title": "Search on Google"
+      }
+    ]
+  }
+}
